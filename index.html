@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Ecommerce</title>
+</head>
+
+<body>
+  <!-- ====== Header ====== -->
+  <header class="header">
+    <!-- ====== Navigation ====== -->
+    <nav class="navBar">
+        <ul class="menu_desktop">
+          <li><img src="./img/favicon.png" alt=""></li>
+          <li><a href="#home">Store</a></li>
+          <li><a href="#about">Home</a></li>
+          <li><a href="#skills">Products</a></li>
+      </ul>
+    </nav>
+    <!-- ====== shoping car ====== -->
+    <div class="container-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="icon-cart">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+      </svg>
+      <div class="count-products">
+        <span id="contador-productos">0</span>
+      </div>
+      <div class="container-cart-products hidden-cart">
+        <div class="cart-product">
+          <div class="info-cart-product">
+            <span class="cantidad-producto-carrito">1</span>
+            <p class="titulo-producto-carrito">Zapatos Nike</p>
+            <span class="precio-producto-carrito">$80</span>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="icon-close">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <div class="cart-total">
+          <h3>Total:</h3>
+          <span class="total-pagar">$200</span>
+        </div>
+      </div>
+  </header>
+
+  <!-- ====== Hero Area ====== -->
+  <div class="hero">
+    <div class="banner">
+      <span class="subtitle">New Sweatshirt <br> COLLECTIONS 2022</span>
+      <div class="parrafo">
+        <p>Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
+          design.</p>
+      </div>
+
+      <button class="btn">ADD TO CARD</button>
+    </div>
+    <div class="sweater">
+      <img src="./img/home.png" alt="" />
+    </div>
+  </div>
+
+
+  <!-- ====== Collection ====== -->
+  <div class="container-items">
+    <div class="item">
+      <figure>
+        <img src="./img/featured1.png" alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Hoddies</h2>
+        <p class="price">$80</p>
+        <button>Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="./img/featured2.png" alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Shirts</h2>
+        <p class="price">$20</p>
+        <button>Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="./img/featured3.png" alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Sweatshirt</h2>
+        <p class="price">$50</p>
+        <button>Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer section">
+      <div class="footer__content">
+        <h3 class="footer__title">Our information</h3>
+
+        <ul class="footer__list">
+          <li>Bogota-Colombia</li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">About Us</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Support Center</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Customer Support</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Copy Right</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Product</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Hoodies</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Shirts</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Sweatshirts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Social</h3>
+        <div class="redes">
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-instagram bx-flashing bx-rotate-180'></i>
+        <i class='bx bxl-twitter'></i>
+      </div>
+    </div>
+  </footer>
+
+      <!-- ====== Script ====== -->
+      <script src="./main.js"></script>
+
+</body>
+
+</html>
